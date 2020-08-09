@@ -8,11 +8,18 @@
       "id": 1
     },
     {
-      "name": "Mary Johnson",
-      "phone": "808937482734",
-      "address": "893 Main Voulevard",
+      "name": "Umar Gul",
+      "phone": "9857485747",
+      "address": "Burn street",
       "membership": "Pro",
       "id": 2
+    },
+    {
+      "name": "Rani Kaman",
+      "phone": "87574758874",
+      "address": "112 Star Streetf",
+      "membership": "Basic",
+      "id": 3
     }
   ]
 }
