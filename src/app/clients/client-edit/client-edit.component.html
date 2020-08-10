@@ -1,7 +1,7 @@
 <div class="mt-4">
   <h3>Edit Client</h3>
-  <form class="form-inline mb-4">
-  <!--form [formGroup]="customerForm" (submit)="updateCustomer()" class="form-inline mb-4"-->
+  <!--form class="form-inline mb-4"-->
+  <form [formGroup]="clientForm" (submit)="updateClient()" class="form-inline mb-4">
 
     <label class="sr-only" for="Name">Client Name</label>
     <div class="input-group mb-2 mr-sm-2">

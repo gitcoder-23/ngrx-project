@@ -17,8 +17,40 @@
     {
       "name": "Rani Kaman",
       "phone": "87574758874",
-      "address": "112 Star Streetf",
-      "membership": "Basic",
+      "address": "112 Star Street",
+      "membership": "Platinum",
+      "id": 3
+    }
+  ],
+  "clients": [
+    {
+      "name": "Umar Gul",
+      "phone": "9857485747",
+      "address": "Burn street",
+      "membership": "Pro",
+      "id": 2
+    },
+    {
+      "name": "Bani Kaman",
+      "phone": "75574758874",
+      "address": "102 Star Street",
+      "membership": "Gold",
+      "id": 3
+    }
+  ],
+  "employee": [
+    {
+      "name": "Umar Gul",
+      "phone": "9857485747",
+      "address": "Burn street",
+      "membership": "Pro",
+      "id": 2
+    },
+    {
+      "name": "Bani Kaman",
+      "phone": "75574758874",
+      "address": "102 Star Street",
+      "membership": "Gold",
       "id": 3
     }
   ]
