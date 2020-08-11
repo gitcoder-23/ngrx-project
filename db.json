@@ -27,15 +27,22 @@
       "name": "Umar Gul",
       "phone": "9857485747",
       "address": "Burn street",
-      "membership": "Pro",
+      "membership": "Basic",
       "id": 2
     },
     {
       "name": "Bani Kaman",
       "phone": "75574758874",
       "address": "102 Star Street",
-      "membership": "Gold",
+      "membership": "Platinum",
       "id": 3
+    },
+    {
+      "name": "Prerona Goms",
+      "phone": "7857254478",
+      "address": "154, villa",
+      "membership": "Pro",
+      "id": 4
     }
   ],
   "employee": [

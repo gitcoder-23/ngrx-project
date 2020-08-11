@@ -11,7 +11,9 @@ import {
   RouterStateSerializer
 } from "@ngrx/router-store"; //Needed
 
-import { CustomSerializer } from "./shared/utils";
+import { CustomSerializer } from "./shared/utils"; //For Customer
+
+import { ClientCustomSerializer } from './clientshared/utils'; //For client
 
 import { AppRoutingModule } from "./app-routing.module";
 
@@ -34,7 +36,19 @@ import { RoombarComponent } from './roombar/roombar.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }],
+  providers: [
+    { 
+      provide: RouterStateSerializer, 
+      useClass: CustomSerializer,
+    },
+
+    { 
+      provide: RouterStateSerializer,
+      useClass: ClientCustomSerializer,
+    },
+
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
