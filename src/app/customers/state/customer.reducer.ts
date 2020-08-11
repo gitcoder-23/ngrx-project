@@ -34,7 +34,7 @@ export const initialState = customerAdapter.getInitialState(defaultCustomer);
 
 export function customerReducer(
   state = initialState,
-  action: customerActions.Action
+  action: customerActions.customerLoadAction
 ): CustomerState {
   switch (action.type) {
     case customerActions.CustomerActionTypes.LOAD_CUSTOMERS_SUCCESS: {

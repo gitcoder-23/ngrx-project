@@ -43,6 +43,13 @@
       "address": "154, villa",
       "membership": "Pro",
       "id": 4
+    },
+    {
+      "name": "Usuf Pathan",
+      "phone": "7557475475",
+      "address": "Pathan Gull Aali Pant",
+      "membership": "Basic",
+      "id": 5
     }
   ],
   "employee": [

@@ -5,7 +5,7 @@ import { Observable } from 'rxjs'; //Needed
 import * as clientActions from '../state/client.actions';//Needed
 import * as fromClient from '../state/client.reducer';//Needed
 import { Client } from '../client.model';
-import { t } from '@angular/core/src/render3';
+//import { t } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-client-list',

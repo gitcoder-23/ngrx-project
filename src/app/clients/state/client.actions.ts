@@ -1,4 +1,4 @@
-import { Action } from '@ngrx/store';
+import {  Action } from '@ngrx/store';
 import { Update } from '@ngrx/entity'; //Needed for update
 import { Client } from '../client.model';
 
@@ -144,7 +144,7 @@ export class DeleteClientFail implements Action {
 }
 
 //Declare all as union
-export type Action = 
+export type clientLoadAction = 
 LoadClients | 
 LoadClientsSuccess | 
 LoadClientsFail |

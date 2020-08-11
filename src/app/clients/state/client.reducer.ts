@@ -36,7 +36,7 @@ export const initialState = clientAdapter.getInitialState(defaultClient)
 
 export function clientReducer(
   state = initialState,
-  action: clientActions.Action
+  action: clientActions.clientLoadAction
 ): ClientState {
   switch (action.type) {
       //case one
