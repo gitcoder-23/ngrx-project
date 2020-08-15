@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <form (ngSubmit)="doSave()">
+                <div >
+                    <label for="uid">User Id</label>
+                    <input type="number" [(ngModel)]='uid' name="uid"   id="uid">
+                </div>
+                <div >
+                    <label for="title">Title</label>
+                    <input type="text" [(ngModel)]='firstname' name="title"  id="title">
+                </div>
+                <div >
+                    <label for="body">Body</label>
+                    <input type="text" [(ngModel)]='lastname' name="body"  id="body">
+                </div>
+               
+                <div *ngIf="!updatingId">
+                    <button  class="btn btn-success btn-sm">Save</button>
+                </div>
+                <div *ngIf="updatingId">
+                    <button  class="btn btn-dark btn-sm mr-5">Update</button>
+                    <button (click)="clearaData()" class="btn btn-primary btn-sm"> Go to insert </button>
+                </div>
+                
+            </form>
+           
+        </div>
+        
+        <div class="col-8">
+            <ul  *ngFor=" let d  of (data$ | async)" class="list-group list-group-horizontal">
+                <li class="list-group-item">{{ d.firstname+" "+d.lastname }} </li>
+                <li class="list-group-item">
+                    <!--  -->
+                    <!--  routerLink='/edit/{{d.id}}'-->
+                    <button (click)="edit(d.id)" class="btn btn-warning btn-sm">Edit</button>
+                </li>
+                <li class="list-group-item"><button (click)="deletePost(d.id)" class="btn btn-danger btn-sm">Delete</button></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
